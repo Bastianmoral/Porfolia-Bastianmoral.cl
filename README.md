@@ -42,11 +42,6 @@ npm run build
 ## 📁 Estructura del proyecto
 
 ```bash
-npm run build
-```
-
-
-```bash
 src/
 ├── components/ # Secciones y UI
 ├── data/ # Contenido dinámico (proyectos, textos, etc.)
