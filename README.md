@@ -1,116 +1,60 @@
-# Portfolio - Bastián Moral
+# 🌐 Portfolio Personal - Bastián Moral
 
-## 🚀 Quick Start
+Este es mi portafolio profesional, desarrollado para mostrar mi experiencia construyendo soluciones **Full Stack, DevOps, automatización de procesos y productos digitales reales.**
 
-### Instalación
+El sitio está diseñado con foco en:
+- Experiencia de usuario moderna
+- Rendimiento y accesibilidad
+- Código escalable y mantenible
+- Secciones claras: Sobre mí, Proyectos, Certificaciones, Contacto
+
+Puedes verlo en producción aquí:
+👉 **https://bastianmoral.cl**
+
+---
+
+## 🛠️ Stack Tecnológico
+
+- **Frontend:** React + Vite + Tailwind CSS + Framer Motion  
+- **Arquitectura:** Componentes modulares y reutilizables  
+- **Temas:** Light / Dark mode dinámico  
+- **Optimización:** SEO, Open Graph, meta tags, prefetching  
+
+---
+
+## 🚀 Inicio rápido (Quick Start)
+
+### 1️⃣ Instalar dependencias
 ```bash
 npm install
 ```
-
-### Desarrollo
+##  2️⃣ Modo desarrollo
 ```bash
 npm run dev
 ```
-
-### Build para producción
+## 3️⃣ Build para producción
 ```bash
 npm run build
 ```
-
-## 📦 Deploy en tu servidor (bastianmoral.cl)
-
-### Opción 1: Deploy manual via FTP/SFTP
-
-1. Genera el build:
-```bash
-npm run build
-```
-
-2. Sube el contenido de la carpeta `dist/` a tu servidor
-
-### Opción 2: Deploy con GitHub Pages + Custom Domain
-
-1. Crea un repositorio en GitHub
-2. Agrega este workflow en `.github/workflows/deploy.yml`:
-
-```yaml
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      
-      - run: npm ci
-      - run: npm run build
-      
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-```
-
-3. Configura tu dominio en GitHub Pages settings
-4. Agrega un archivo CNAME en `public/` con: `bastianmoral.cl`
-
-### Opción 3: Deploy con Vercel/Netlify (Recomendado para rapidez)
-
-#### Vercel:
-```bash
-npm i -g vercel
-vercel
-```
-Luego configura tu dominio personalizado en el dashboard de Vercel.
-
-#### Netlify:
-1. Arrastra la carpeta `dist` al dashboard de Netlify
-2. Configura tu dominio personalizado
-
-## 🔧 Personalización rápida
-
-### Cambiar proyectos:
-Edita el array `projects` en `src/App.jsx`
-
-### Cambiar información personal:
-Busca y reemplaza:
-- "Bastián Moral" con tu nombre
-- "contacto@bastianmoral.cl" con tu email
-- URLs de los proyectos
-
-### Cambiar colores:
-- Color principal: Busca `blue-600` y reemplaza con tu color preferido
-- Dark mode: Los colores ya se adaptan automáticamente
-
-## 📝 Checklist para la evaluación
-
-✅ Nombre y presentación personal  
-✅ Mínimo 3 proyectos con:
-  - Descripción
-  - Objetivos
-  - Tecnologías utilizadas
-  - Reflexión personal
-  - Enlaces a demos/código
-
-✅ Diseño limpio y profesional  
-✅ Navegación clara  
-✅ Responsive design  
-✅ Accesible online  
-
-## 🎯 Tiempo estimado: 30 minutos
-
-1. Instalar dependencias: 2 min
-2. Personalizar contenido: 15 min
-3. Build: 1 min
-4. Deploy: 10 min
-5. Verificación: 2 min
 
 ---
-**Desarrollado para evaluación Módulo 11 - IT Academy by Kibernum**
+
+## 📁 Estructura del proyecto
+
+```bash
+npm run build
+```
+
+
+```bash
+src/
+├── components/ # Secciones y UI
+├── data/ # Contenido dinámico (proyectos, textos, etc.)
+├── App.jsx # Layout principal
+├── main.jsx # Punto de entrada
+└── index.css # Estilos globales
+public/
+└── assets/ # Imágenes, íconos, badges
+```
+
+Todo el contenido editable (proyectos, certificaciones, bio, navegación, colores, textos de UI) está centralizado en: src/data/portfolioData.js
